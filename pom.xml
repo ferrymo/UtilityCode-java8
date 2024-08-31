@@ -3,8 +3,8 @@
 
 	<!-- Project settings -->
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>dev.brachtendorf</groupId>
-	<artifactId>UtilityCode</artifactId>
+	<groupId>org.ferrym</groupId>
+	<artifactId>UtilityCode-java8</artifactId>
 	<version>2.0.1</version>
 
 	<name>Utility Code</name>
@@ -20,7 +20,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<javac.target>11</javac.target>
+		<javac.target>8</javac.target>
 	</properties>
 
 	<licenses>
@@ -48,7 +48,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>dev.brachtendorf</groupId>
-			<artifactId>pcg-java-10</artifactId>
+			<artifactId>pcg-java-8</artifactId>
 			<version>1.0.1</version>
 		</dependency>
 
@@ -106,14 +106,14 @@
 				<configuration>
 					<additionalOptions>-html5</additionalOptions>
 				</configuration>
-				<executions>
-					<execution>
-						<id>attach-javadocs</id>
-						<goals>
-							<goal>jar</goal>
-						</goals>
-					</execution>
-				</executions>
+<!--				<executions>-->
+<!--					<execution>-->
+<!--						<id>attach-javadocs</id>-->
+<!--						<goals>-->
+<!--							<goal>jar</goal>-->
+<!--						</goals>-->
+<!--					</execution>-->
+<!--				</executions>-->
 			</plugin>
 			<plugin>
 				<artifactId>maven-source-plugin</artifactId>
